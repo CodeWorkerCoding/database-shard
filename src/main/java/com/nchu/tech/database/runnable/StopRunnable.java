@@ -15,7 +15,7 @@ public class StopRunnable implements Runnable {
 
     }
 
-    public static void main(String[] args) throws Exception{
+    /*public static void main(String[] args) throws Exception{
         while (true) {
             StopRunnable runnable = new StopRunnable();
             Thread thread = new Thread(runnable);
@@ -25,5 +25,5 @@ public class StopRunnable implements Runnable {
             runnable.flag = false;
         }
 
-    }
+    }*/
 }

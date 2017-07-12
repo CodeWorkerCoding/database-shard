@@ -8,4 +8,6 @@ import com.nchu.tech.database.model.City;
 public interface CityService {
 
     City createCity(City city);
+
+    City findById(String id);
 }

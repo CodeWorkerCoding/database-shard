@@ -24,12 +24,4 @@ public class CustomerRunnable implements Runnable {
             e.printStackTrace();
         }
     }
-
-    public static void main(String[] args) {
-        Common c = new Common();
-        Thread thread1 = new Thread(new CustomerRunnable(0, c));
-        Thread thread2 = new Thread(new CustomerRunnable(1, c));
-        thread1.start();
-        thread2.start();
-    }
 }

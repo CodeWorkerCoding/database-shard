@@ -1,5 +1,6 @@
 package com.nchu.tech.database.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.nchu.tech.database.model.City;
 import com.nchu.tech.database.service.CityService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,4 +28,10 @@ public class CityController {
         return "success";
     }
 
+    @RequestMapping(value = "get", method = RequestMethod.GET)
+    public String getCity() {
+        City city = this.cityService.findById("1499252271616");
+        return JSON.toJSONString(city);
+
+    }
 }

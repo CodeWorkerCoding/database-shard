@@ -13,10 +13,10 @@
 
     <sql id="selectAll">
         city.id,
-        city.city_name
-        city.code
-        city.province_id
-        city.create_date
+        city.city_name,
+        city.code,
+        city.province_id,
+        city.create_date,
         city.modified_date
     </sql>
 
