@@ -45,6 +45,7 @@ public class MybatisConfig extends MybatisAutoConfiguration {
         proxy.setDefaultTargetDataSource(masterDateSource);
         proxy.setTargetDataSources(targetDataResources);
 
+        proxy.afterPropertiesSet();
         return proxy;
     }
 

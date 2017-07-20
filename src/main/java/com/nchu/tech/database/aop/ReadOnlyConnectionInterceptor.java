@@ -33,7 +33,7 @@ public class ReadOnlyConnectionInterceptor implements Ordered {
     }
 
     //@Around(value = "execution(com.nchu.tech.database*.(..))")
-    //@Around(value = "execution(public * find*(..))")
+    @Around(value = " execution(* com.nchu.tech.database.service.*.find*(..))")
     public Object processd(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
         try {
             log.info("set data source connect to read only");
